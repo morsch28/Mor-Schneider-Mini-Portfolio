@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    font-family: Heebo;
+    color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+#right-side{
+    width:30%;
+    height: 100vh;
+    background-image: url(../images/2042.jpg_wh300.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    overflow: auto;
+}
+#left-side{
+    width: 75%;
+    background-color: rgb(227, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    gap:10px;
+    text-align: center;
+    justify-items: center;
+}
+input{
+    width:170px;
+    height: 20px;
+}
+button{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(34, 154, 252);
+    color: #fff;
+    font-family: Heebo;
+    font-weight: bold;
+    font-size: 15px;
+}
+#inbox{
+    display: flex;
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    gap: 10px;
+    /* overflow: auto; */
+    flex-wrap: wrap;
+}
+.borderInput{
+    width:70px;
+}
+.group-01{
+    display: flex;
+    gap:15px;
+}
+.label{
+    font-size: 15px;
+}
+h1,h2,h3,p{
+    border: none !important;
+}
+.shadowElement{
+    width:75px;
+}
+#borderStyle{
+    height: 25px;
+}
+select{
+    background-color: #8888ff;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    #right-side{
+        width:50%;
+        align-items: center;
+        margin-right: 20px;
+        
+        
+    }
+    #inbox{
+        width: 90%;
+        height: 90%;
+    }
+    #left-side{
+        width: 60%;
+
+    }
+    h1{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    input{
+        width:100px
+    }
+    label{
+        font-size: 1rem;
+    }
+    .group{
+        white-space: nowrap;
+        gap:0;
+    }
+    .group-01 {
+       align-items: center;
+       gap:9px;
+    }
+    input{
+        width: 80px;
+    }
+    button{
+        width:40px;
+    }
+    .shadowElement {
+        width: 38px;
+        height: 15px;
+    }
+    .borderInput {
+        width: 38px;
+        height: 19px;
+    }
+    #borderStyle{
+        height: 21px;
+    }
+    h4{
+        margin-bottom: 5px;
+    }
+
+}

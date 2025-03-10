@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>סיבוב</th>
+                    <th colspan="2">ניקוד</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>מחשב</th>
+                    <th>שחקן</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+            <tr id="lowInline">
+                <th>סה"כ</th>
+                <th id="computer">0</th>
+                <th id="player">0</th>
+            </tr>
+        </table>
+        <div id="box">
+            <h1>איקס-עיגול</h1>
+            <div id="inbox">
+                <div id="line"></div>
+            </div>
+            <!-- <button onclick="game()">התחלה מחדש</button> -->
+        </div>
+        <div class="modal" id="modal">
+            <div id="winner"></div>
+        </div>
+    </div>
+    <script src="js/tictactoe.js"></script>
+</body>
+</html>

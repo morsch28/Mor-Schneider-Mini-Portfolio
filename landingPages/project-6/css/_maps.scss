@@ -1,0 +1,25 @@
+$position : (
+    "rel": relative,
+    "stati": static,
+    "fix": fixed
+);
+
+$back: (
+    "oran": #FDBD03,
+    "white": #fff,
+    "white1": #E5EEFF,
+    "bla": #020253
+);
+$direction:(
+    "col": column,
+    "c": center,
+    "st": start,
+    "e": end,
+    "hebrew": rtl
+);
+$symbol: (
+    "facebook":  url('../images/facebook-app-symbol.png'),
+    "instagram": url('../images/instagram.png'),
+    "linkdin": url('../images/linkedin.png'),
+    "tel": url('../images/phone-call.png')
+);

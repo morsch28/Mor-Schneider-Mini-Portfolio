@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@100..900&family=Oswald:wght@200..700&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#my-navbar {
+  display: flex;
+  font-size: 1.5rem;
+  border-bottom: 2px solid black;
+  background-color: rgb(224, 209, 209);
+  font-family: Oswald;
+  width: 100vw;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  gap: 50px;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 32px;
+  gap: 30px;
+  background-image: url("../images/header-background.png"),
+    linear-gradient(to right bottom, purple, #eb78c8 50%);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid black;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+#p-header {
+  font-size: 1.5rem;
+  background-color: #fff;
+  font-family: Oswald;
+}
+.images {
+  width: 60px;
+  height: 60px;
+}
+#knowledge {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: #fac3ea;
+  padding: 50px;
+  gap: 100px;
+  flex-direction: row-reverse;
+}
+.row-1 {
+  display: flex;
+  gap: 30px;
+}
+a {
+  background-color: #fac3ea;
+  padding: 10px;
+  color: purple !important;
+  font-weight: bold;
+  border-radius: 16px;
+  border: 1px solid purple;
+  width: 150px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.decoration {
+  text-decoration: none;
+}
+#image {
+  width: 90%;
+}
+.imgIcon {
+  width: 60px;
+}
+#home-page-btn {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 6px;
+  font-weight: 600;
+  width: fit-content;
+}
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.decoration {
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* #h1-header {
+    font-size: 2.5rem;
+  } */
+  #p-header {
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  .images {
+    width: 40px;
+    height: 40px;
+  }
+  #image {
+    width: 90%;
+    height: 100%;
+  }
+  #last {
+    width: 65%;
+    height: 70%;
+    margin-top: 8%;
+  }
+  #knowledge {
+    gap: 20px;
+  }
+  #myPicture {
+    width: 125px;
+    height: 150px;
+  }
+  .section-1 {
+    padding: 15px;
+    height: 500px;
+  }
+  h1 {
+    white-space: nowrap;
+    font-size: 2rem;
+  }
+  .row-1 {
+    gap: 20px;
+  }
+  a {
+    padding: 6px;
+    width: 150px;
+    font-size: 1rem;
+  }
+}

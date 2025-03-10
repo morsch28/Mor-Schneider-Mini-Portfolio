@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+@import './_var.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+body{
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  overflow: hidden;
+}
+
+.line {
+  height: 18px;
+  background: #fdbd03 0% 0% no-repeat padding-box;
+}
+
+.upper {
+  width: 418px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.bottom {
+  width: 700px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+#whatsapp {
+  position: fixed;
+  left: 40px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  background: #FDBD03;
+  padding: 10px;
+  border-radius: 90%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 70%; */
+  margin-top: -60px;
+}
+
+.phone {
+  display: flex;
+  justify-content: end;
+}
+#phone{
+  height: 60%;
+}
+form {
+  display: flex;
+      /* gap: 6px; */
+      flex-direction: column;
+      direction: rtl;
+}
+
+input {
+  width: 270px;
+  height: 30px;
+  border: none;
+  border-bottom: #FDBD03 3px solid;
+  background: #E5EEFF;
+  margin-bottom: 15px;
+}
+
+#input-3 {
+  width: 500px;
+  height: 115px;
+}
+
+label {
+  font: normal normal bold 15px/24px Heebo;
+}
+
+h1 {
+  font: normal normal 900 60px/97px Heebo;
+  color: #FDBD03;
+}
+
+p {
+  font: normal normal normal 18px/29px Heebo;
+  color: #020253;
+  margin-top: -30px;
+  direction: rtl;
+}
+
+.images {
+  display: flex;
+  position: fixed;
+  bottom: 23px;
+  gap: 10px;
+}
+
+#facebook, #instush, #linkdin, #tel {
+  background: #FDBD03;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px;
+  background-size: 30px;
+}
+
+#facebook {
+  background-image: url("../images/facebook-app-symbol.png");
+}
+
+#instush {
+  background-image: url("../images/instagram.png");
+}
+
+#linkdin {
+  background-image: url("../images/linkedin.png");
+}
+
+#tel {
+  background-image: url("../images/phone-call.png");
+}
+input[type="submit"]{
+  width:200px;
+  background: #FDBD03;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  #whatsapp {
+    position: static;
+    margin-top: 40px;
+    width: 10%;
+    height: 6%;
+  }
+  body{
+    flex-direction: column;
+  }
+  #phone {
+    width: 33%;
+    margin-right: 110px;
+    position: fixed;
+    display: flex;
+    height: 20%;
+    top: 25px;
+
+  }
+  form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 110px;
+    margin-top: 150px;
+  }
+  h1 {
+    color: #FDBD03;
+    position: relative;
+    top: 175px;
+    left: 47px;
+    font-size: 40px;
+  }
+  #input-3 {
+    width: 330px;
+  }
+  p {
+    position: relative;
+    top: 165px;
+    font-size: 14px;
+    left: 56px;
+    text-align: center;
+  }
+  input{
+    width:285px;
+  }
+  input[type="submit"]{
+    width:330px;
+  }
+  .content{
+    width: 70%;
+    gap:15px;
+  }
+  input{
+    margin-bottom: 0px;
+  }
+}

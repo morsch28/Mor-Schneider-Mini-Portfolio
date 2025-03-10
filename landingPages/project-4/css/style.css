@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+body{
+    margin: 0 auto;
+    font-family: Assistant;
+
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100wh;
+    background-image: url(../images/Path\ 15.png);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 0;
+} 
+h1{
+    display: flex;
+    text-align: right;
+    font: normal normal bold 86px/113px Assistant;
+    font-size: 40pxS;
+    color: #D3E10E;
+    opacity: 1;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+p{  
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    letter-spacing: 0px;
+    color: #F9F9F9;
+    opacity: 1;
+    margin-top: 120px;
+}
+form{
+    display: flex;
+    direction: rtl;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background: transparent;
+    text-align: center;
+    justify-content: end;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+input{
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border: none;
+    border-bottom: 5px solid #D3E10E;
+    width: 270px;
+    height: 30px;
+    margin-left: 60px;
+}
+input[type="submit"]{
+    background: #D3E10E 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 150px;
+    height: 37px;
+}
+#name{
+    display: flex;
+/* UI Properties */
+    font: normal normal bold 16px/21px Assistant;
+    letter-spacing: 0px;
+    color: #011560;
+    opacity: 1;
+    margin-top: -20px;
+    margin-left: -55px;
+}
+#mail{
+    display: flex;
+/* UI Properties */
+    font: normal normal bold 16px/21px Assistant;
+    letter-spacing: 0px;
+    color: #011560;
+    opacity: 1;
+    margin-top: -20px;
+    margin-left: -41px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .image{
+        height: 50vh;
+        width: 100%;
+    }
+    h1{
+        font: normal normal bold 35px/113px Assistant;
+        margin-left: 200px;
+        margin-top: 10px;
+        margin-top: -35px;
+        margin-left: 0px;
+    }
+    p{
+        font-size: 100%;
+        margin-top: 100px;
+    }
+    form{
+        flex-direction: column;
+        font: normal normal bold 10px/14px Heebo;
+        margin-top: 70px;
+        margin-right: 15px;
+    }
+    input{
+        align-items: center;
+        justify-content: center;
+        width: 340px;
+        height: 40px;
+    }
+    input[type="submit"]{
+        width: 340px;
+        height: 37px;
+        margin-top: 24px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

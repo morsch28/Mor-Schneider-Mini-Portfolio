@@ -1,0 +1,73 @@
+h1 {
+  font-size: 3.8rem;
+}
+.btn1 {
+  width: 100px;
+}
+input[type="email"]:invalid {
+  border: 3px solid red;
+}
+#status {
+  font-size: 1.4rem;
+}
+#form {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  border: 2px solid black;
+  width: 50%;
+  padding: 10px;
+}
+th {
+  white-space: nowrap;
+  font-size: 1.5rem;
+}
+td {
+  width: 15%;
+  font-size: 1.4rem;
+}
+#valid {
+  margin-right: 100px;
+}
+#mainForm,
+#secondaryForm {
+  width: 33%;
+  height: 97%;
+}
+#to-signUp {
+  font-size: 1.2rem;
+  white-space: nowrap;
+}
+#loginSignup {
+  gap: 10px;
+}
+button {
+  width: 80px;
+  height: 50px;
+  border-radius: 100%;
+}
+a {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #mainForm {
+    width: 85%;
+    height: 85%;
+  }
+  #secondaryForm {
+    width: 98%;
+    height: 75%;
+  }
+  #valid {
+    margin-right: 0;
+    font-size: 3rem !important;
+    white-space: nowrap;
+  }
+  button {
+    font-size: 90%;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page-Building-14</title>
+    <link rel="stylesheet" href="css/pageBilding.css" />
+  </head>
+  <body>
+    <div id="right-side">
+      <h1>בונה מסך</h1>
+      <div class="group">
+        <label for="">סוג האלמנט</label>
+        <select name="" id="type">
+          <option value="h1">h1</option>
+          <option value="h2">h2</option>
+          <option value="h3">h3</option>
+          <option value="p">p</option>
+          <option value="div">div</option>
+          <option value="span">span</option>
+        </select>
+      </div>
+
+      <div class="group">
+        <label for="">צבע רקע</label>
+        <input type="color" id="userColor" value="#ffffff" />
+      </div>
+
+      <div class="group">
+        <label for="">רוחב</label>
+        <input type="number" id="userWidth" />
+      </div>
+
+      <div class="group">
+        <label for="">גובה</label>
+        <input type="number" id="userHeight" />
+      </div>
+
+      <div class="group">
+        <label for="">תוכן</label>
+        <input type="text" id="userText" />
+      </div>
+
+      <div class="group">
+        <label>צבע גופן</label>
+        <input type="color" id="textColor" />
+        <label>גודל גופן</label>
+        <input type="number" id="fontSize" />
+      </div>
+
+      <div class="group">
+        <h4>עיצוב מסגרת</h4>
+        <div class="group-01">
+          <div class="group">
+            <label class="size">עובי</label>
+            <input type="number" id="borderThick" class="borderInput" />
+          </div>
+          <div class="group">
+            <label class="size">סגנון</label>
+            <select id="borderStyle">
+              <option value="solid">solid</option>
+              <option value="dashed">dashed</option>
+              <option value="dotted">dotted</option>
+              <option value="double">double</option>
+              <option value="groove">groove</option>
+              <option value="inset">inset</option>
+              <option value="ridge">ridge</option>
+              <option value="outset">outset</option>
+              <option value="none">none</option>
+              <option value="hidden">hidden</option>
+            </select>
+          </div>
+          <div class="group">
+            <label class="size">צבע</label>
+            <input type="color" id="borderColor" class="borderInput" />
+          </div>
+        </div>
+      </div>
+      <div class="group">
+        <label class="size">ריווח פנימי</label>
+        <input type="number" id="padding" />
+        <label class="size">ריווח חיצוני</label>
+        <input type="number" id="margin" />
+      </div>
+      <div class="group">
+        <label class="size">עיגול פינות</label>
+        <input type="number" id="borderRadius" />
+      </div>
+
+      <div class="group">
+        <h4>הוספת צל</h4>
+        <div class="group-01">
+          <div class="group">
+            <label class="size">ציר-x</label>
+            <input type="number" id="shadowX" class="shadowElement" />
+          </div>
+          <div class="group">
+            <label class="size">ציר-y</label>
+            <input type="number" id="shadowY" class="shadowElement" />
+          </div>
+          <div class="group">
+            <label class="size">צבע צל</label>
+            <input type="color" id="colorOfShadow" class="shadowElement" />
+          </div>
+        </div>
+      </div>
+
+      <div class="group-01">
+        <button onclick="add()">הוסף</button>
+        <button onclick="deletBoard()">מחק</button>
+        <button onclick="save()">שמור</button>
+      </div>
+    </div>
+
+    <div id="left-side">
+      <div id="inbox"></div>
+    </div>
+
+    <script src="js/pageBuilding_14.js"></script>
+  </body>
+</html>

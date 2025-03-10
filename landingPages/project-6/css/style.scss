@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+.container{
+    display: $displayflex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.line{
+    height: 18px;
+    background: #fdbd03 0% 0% no-repeat padding-box;
+}
+.upper{
+    width: 418px;
+    // position: fixed;
+    right: 0;
+    top: 0;
+}
+.bottom{
+    width: 700px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+#whatsapp{
+    position: fixed;
+    left: 40px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background: #FDBD03;
+    padding: 10px;
+    border-radius: 90%;
+}
+.content{
+    display: $displayflex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: -20px;
+}
+.phone{
+    display: $displayflex;
+    justify-content: end;
+    margin-top: -420px;
+}
+#phone{
+    width: 25%;
+}
+form{
+    display: $displayflex;
+    gap: 30px;
+}
+#form-1{
+    display: $displayflex;
+    flex-direction: column;
+    direction: rtl;
+    gap: 2px;
+}
+#form-2{
+    display: $displayflex;
+    flex-direction: column;
+    direction: rtl;
+    gap: 2px;
+}
+input{
+    width: 270px;
+    height: 30px;
+    border: none;
+    border-bottom:#FDBD03 3px solid ;
+    background: #E5EEFF;
+}
+#input-3{
+    width: 211%;
+    height: 125px;
+}
+#label{
+    margin-top: -15px;
+}
+label{
+    font: normal normal bold 15px/24px Heebo;
+}
+h1{
+    font: normal normal 900 60px/97px Heebo;
+    color: #FDBD03;
+    
+}
+p{
+    font: normal normal normal 18px/29px Heebo;
+    color: #020253;
+    margin-top: -30px;
+    direction: rtl;
+}
+.images{
+    display: $displayflex;
+    position: fixed;
+    bottom: 23px;
+    gap:10px;
+}
+#facebook, #instush, #linkdin, #tel{
+    background: #FDBD03;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position:center;
+    padding: 5px;
+    background-size: 30px;
+}
+#facebook{
+    background-image: url('../images/facebook-app-symbol.png');
+}
+#instush{
+    background-image: url('../images/instagram.png');
+    
+}
+#linkdin{
+    background-image: url('../images/linkedin.png');
+}
+#tel{
+    background-image: url('../images/phone-call.png');
+}
+
+
+
+@media screen and (max-width: 765px) {
+   #whatsapp{
+    position: static;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 10%;
+    height: 10%;
+   }
+   #phone{
+    width: 20%;
+    margin-right: 124px;
+    width: 39%;
+    position: relative;
+    bottom: 334px;
+   }
+   form{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 175px;
+    margin-top: 150px;
+   }
+   h1{
+    font: normal normal 900 60px / 97px Heebo;
+    color: #FDBD03;
+    position: relative;
+    top: 175px;
+    left: 47px;
+    font-size: 50px;
+   }
+   #input-3{
+    width: 330px;
+   }
+   p{
+    position: relative;
+    top: 165px;
+    font-size: 16px;
+    left: 56px;
+    text-align: center;
+   }
+   input{
+    width:330px;
+   }
+  
+}

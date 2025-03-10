@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math-02</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<div class="container">
+    <div id="box">
+        <h4>לומדת חשבון</h4>
+        <div id="option">
+            <br>
+            <label>בחר טווח מספרים</label>
+            <select id="range" onchange="showExercise()">
+                <option value="10">1-10</option>
+                <option value="100">1-100</option>
+                <option value="1000">1-1000</option>
+            </select>
+        </div>
+        <hr>
+        <div id="inbox">
+            <button onclick="math()">בדוק</button>
+            <input type="number" id="userAnswer">
+            <div id="exercise"></div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>תרגיל</th>
+                    <th>תשובה נכונה</th>
+                    <th>תשובה שענית</th>
+                    <th>נקודות</th>
+                </tr>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+    </div>
+</div>
+<script src="js/learning_math_02.js"></script>    
+
+</body>
+</html>
