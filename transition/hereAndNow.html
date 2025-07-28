@@ -13,6 +13,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -29,7 +33,25 @@
     <div id="header">
       <h1 id="h1-header">Here And Now</h1>
       <p id="p-header">Here I will show you the knowledge i acquired in:</p>
-      <div id="knowledge"></div>
+      <div id="knowledge">
+          <div class="aside-box">
+          <div class="aside-item">
+            <a><i class="bx bxl-html5"></i><span>HTML</span></a>
+          </div>
+          <div class="aside-item">
+            <a><i class="bx bxl-css3"></i><span>CSS</span></a>
+          </div>
+          <div class="aside-item">
+            <a
+              ><i class="bx bxl-javascript "></i
+              ><span>JavaScript</span></a
+            >
+          </div>
+          <div class="aside-item">
+            <a href=""><i class="bx bxl-bootstrap"></i></i><span>BOOTSTRAP</span></a>
+          </div>
+        </div>
+      </div>
       <div class="row-1">
         <a href="../landingPages/project-1/index.html" class="decoration">
           <i class="bi bi-folder2-open"></i>
@@ -45,18 +67,5 @@
     <div class="section-1" id="abaut">
       <img src="images_2/here and now.png" alt="" id="image" />
     </div>
-    <script>
-      let image = document.getElementById("image");
-      function updateImage() {
-        if (window.innerWidth <= 768) {
-          image.src = "images_2/HereAndNowResponsice.png";
-        } else {
-          image.src = "images_2/here and now.png";
-        }
-      }
-      updateImage();
-      window.addEventListener("resize", updateImage);
-    </script>
-    <script src="js/index.js"></script>
   </body>
 </html>

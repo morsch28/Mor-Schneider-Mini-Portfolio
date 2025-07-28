@@ -13,14 +13,20 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+   
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+      <div class="navbar-container">
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" id="hamburger">&#9776;</label>
         <label for="menu-toggle" id="x">&#9747;</label>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div>
           <ul class="navbar-nav" id="my-navbar">
             <div class="nav-item">
               <a
@@ -46,20 +52,39 @@
           </ul>
         </div>
       </div>
-    </nav>
+
+    <div>
     <div id="header">
-      <h1 id="h1-header">My Portfolio</h1>
+      <h1 id="h1-header">Vanilla Frontend Mini Project</h1>
       <p id="p-header">Here I will show you the knowledge i acquired in:</p>
-      <div id="knowledge"></div>
+      <div id="knowledge">
+        <div class="aside-box">
+          <div class="aside-item">
+            <a><i class="bx bxl-html5"></i><span>HTML</span></a>
+          </div>
+          <div class="aside-item">
+            <a><i class="bx bxl-css3"></i><span>CSS</span></a>
+          </div>
+          <div class="aside-item">
+            <a
+              ><i class="bx bxl-javascript "></i
+              ><span>JavaScript</span></a
+            >
+          </div>
+          <div class="aside-item">
+            <a href=""><i class="bx bxl-bootstrap"></i></i><span>BOOTSTRAP</span></a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="section-1" id="abaut">
       <div class="section-1-img-container">
-        <img src="images/morsch_1.jpg" alt="photo of me" id="myPicture" />
+        <img src="images/morsch_1.jpg" alt="photo of me" id="pictureOfMe" />
       </div>
-      <div id="about-me">
+      <div class="aLittleAboutMe">
         <h2>About-Me</h2>
-        <p id="p-abaut">
+        <p id="textAboutMe">
           Hello everyone, my name is Mor Schneider, I'm 34 years old and from
           Tel Aviv. I was raised in Ramat-Aviv, studied at Alliance High School,
           and I was a scout leader at the Aviv Scouts.<br />
@@ -74,7 +99,7 @@
 
     <div class="section-2" id="gallery">
       <h2 id="h2-gallery">Gallery</h2>
-      <div class="cards-section">
+      <div class="cards-section-2">
         <div class="card my-card">
           <img
             src="images/here and now.png"
@@ -125,9 +150,9 @@
         <div class="card my-card">
           <img src="images/Landing-Page-Option-3.png" class="card-img-top" />
           <div class="card-body">
-            <h5 class="card-title">Coffee for a good morning.</h5>
+            <h5 class="card-title">Coffee in the morning.</h5>
             <p class="card-text">
-              If you feel like starting the morning with a good coffee, leave
+              If you're used to drinking coffee in the morning , leave
               your details and we'll get back to you
             </p>
             <div class="icons">
@@ -189,13 +214,11 @@
           </div>
         </div>
         <div class="card my-card">
-          <img src="images/ייעוץ.png" class="card-img-top imglast" />
+          <img src="images/ייעוץ.png" class="card-img-top free-consult" />
           <div class="card-body">
             <h5 class="card-title">Free Consultation</h5>
             <p class="card-text">
-              If you're someone who seeks to learn and have doubts about certain
-              topics, leave your details and we'll get back to you as soon as
-              possible
+              If you want to learn or have questions, leave your details and we'll respond soon
             </p>
             <div class="icons">
               <img src="images/flat-html.png" class="imgIcons" />
@@ -219,281 +242,112 @@
       id="jsGallery"
     >
       <h2 class="h2Js">Js-Gallery</h2>
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="6"
-            aria-label="Slide 7"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="myActive">
-              <div
-                class="myDiv d-flex flex-column align-items-center text-center bg-white"
-              >
-                <h2 class="h2-carousel">Page Building</h2>
-                <p class="p-carousel">
-                  Screan Builder is a tool, that allow designing and building
-                  user interfaces for apps and website visually, without the
-                  need for code.
-                </p>
-                <a
-                  href="transition/pageBuilding.html"
-                  class="btn btn-primary a-btn"
-                  >To Project Page</a
-                >
+      <div class="cards-containers">
+          <div class="cards-section-6">
+            <div class="cardsJs cardOne">
+              <div class="overlay">
+                <p>Memory game that challenges your memory using image pairs.</p>
+                <a href="./transition/rememberGame.html" class="btn" target="_blank">See Project</a>
               </div>
-              <div class="book-spine"></div>
-              <img
-                src="images/BuildingPage.png"
-                class="d-block myPage"
-                id="buildingImg"
-              />
             </div>
+            <p>Memory Game</p>
           </div>
-          <div class="carousel-item">
-            <div class="myActive my-carousel">
-              <div
-                class="myDiv d-flex flex-column align-items-center text-center bg-white"
-              >
-                <h2 class="h2-carousel">Learning Mathematics</h2>
-                <p class="p-carousel">
-                  A math learning game where user selects an operator and range
-                  of numbers, and then presented with a random arithmetic
-                  problem on the screen,using the selected operator and numbers
-                </p>
-                <a
-                  href="transition/mathLearning.html"
-                  class="btn btn-primary a-btn"
-                  >To Project Page</a
-                >
+
+          <div class="cards-section-6">
+            <div class="cardsJs cardTwo">
+              <div class="overlay">
+                <p>Simple drag-and-drop page builder using HTML/CSS/JS.</p>
+                <a href="./transition/pageBuilding.html" class="btn" target="_blank">See Project</a>
               </div>
-              <div class="book-spine"></div>
-              <img
-                src="images/learningMath.png"
-                class="d-block"
-                id="learningPic"
-              />
             </div>
+            <p>Page Builder</p>
           </div>
-          <div class="carousel-item">
-            <div class="myActive">
-              <div
-                class="myDiv d-flex flex-column align-items-center text-center bg-white"
-              >
-                <h2 class="h2-carousel">Cart</h2>
-                <p class="p-carousel">
-                  A math learning game where user selects an operator and range
-                  of numbers, and then presented with a random arithmetic
-                  problem on the screen,using the selected operator and numbers
-                </p>
-                <a
-                  href="transition/cartProject.html"
-                  class="btn btn-primary a-btn"
-                  >To Project Page</a
-                >
+
+          <div class="cards-section-6">
+            <div class="cardsJs cardThree">
+              <div class="overlay">
+                <p>Classic Tic-Tac-Toe game with smart computer logic.</p>
+                <a href="./transition/tictactoe.html" class="btn" target="_blank">See Project</a>
               </div>
-              <div class="book-spine"></div>
-              <img src="images/Cart.png" class="d-block" id="cartPic" />
             </div>
+            <p>Tic-Tac-Toe</p>
           </div>
-          <div class="carousel-item">
-            <div class="myActive">
-              <div
-                class="myDiv d-flex flex-column align-items-center text-center bg-white"
-              >
-                <h2 class="h2-carousel">Remember-Game</h2>
-                <p class="p-carousel">
-                  A Memory-Game is a card matching game where players flip two
-                  card at a time to find matching pairs. The goal is to remember
-                  the position of the card and match all pairs with the fewest
-                  moves
-                </p>
-                <a
-                  href="transition/rememberGame.html"
-                  class="btn btn-primary a-btn"
-                  >To Project Page</a
-                >
+
+          <div class="cards-section-6">
+            <div class="cardsJs cardFour">
+              <div class="overlay">
+                <p>Simple shopping cart with quantity update and item removal.</p>
+                <a href="./transition/cartProject.html" class="btn" target="_blank">See Project</a>
               </div>
-              <div class="book-spine"></div>
-              <img src="images/remember.png" class="d-block" id="cartPic" />
             </div>
+            <p>Cart</p>
           </div>
-          <div class="carousel-item">
-            <div class="myActive">
-              <div
-                class="myDiv d-flex flex-column align-items-center text-center bg-white"
-              >
-                <h2 class="h2-carousel">Tic Tac toe</h2>
-                <p class="p-carousel">
-                  Tic-Tac-Toe is two players game players on 3x3 grid. Players
-                  take turns marking spaces with either an "X" or an "O". The
-                  goal is to get three of the same symbol in row,either
-                  horizontally, vertically, or diagnoally
-                </p>
-                <a
-                  href="transition/tictactoe.html"
-                  class="btn btn-primary a-btn"
-                  >To Project Page</a
-                >
+
+          <div class="cards-section-6">
+            <div class="cardsJs cardFive">
+              <div class="overlay">
+                <p>User management system with registration, login, and admin panel.</p>
+                <a href="./transition/menagementSystem.html" class="btn" target="_blank">See Project</a>
               </div>
-              <div class="book-spine"></div>
-              <img src="images/tictactoe.png" class="d-block" id="cartPic" />
             </div>
+            <p>Management System</p>
           </div>
-          <div class="carousel-item">
-            <div class="myActive">
-              <div
-                class="myDiv d-flex flex-column align-items-center text-center bg-white"
-              >
-                <h2 class="h2-carousel">Connect Four</h2>
-                <p class="p-carousel-7">
-                  Connect Four is a strategic board game for two players. The
-                  board consisys 6 rows and 7 columns, and players take turns
-                  dropping a colored disc into a columns. The disc fall to the
-                  lowest available space in the choosen column or rests on the
-                  top of another disc if the lower space are filled. The goals
-                  of the game is to form a line four discs of the same
-                  color,either horizontally,vertically,or diagnoally
-                </p>
-                <a
-                  href="transition/connectFour.html"
-                  class="btn btn-primary a-btn"
-                  >To Project Page</a
-                >
+
+          <div class="cards-section-6">
+            <div class="cardsJs cardSix">
+              <div class="overlay">
+                <p>Math learning app for practicing operations in a fun way.</p>
+                <a href="./transition/mathLearning.html" class="btn" target="_blank">See Project</a>
               </div>
-              <div class="book-spine"></div>
-              <img
-                src="images/ConnectedFour.png"
-                class="d-block"
-                id="cartPic"
-              />
             </div>
+            <p>Learning Math</p>
           </div>
-          <div class="carousel-item">
-            <div class="myActive">
-              <div
-                class="myDiv d-flex flex-column align-items-center text-center bg-white"
-              >
-                <h2 class="h2-carousel">Management User System</h2>
-                <p class="p-carousel-7">
-                  User management system, refers to the process of managing user
-                  acount and their acess within a system application. This
-                  includes tasks like creating,editing,deleting, and assigning
-                  permissions to user account, as well as managing roles. The
-                  goal is to ensure that users have the appropiate access to
-                  resources while maintaining security and proper organization.
-                  This can involve user registration,login,processes, and
-                  handing different levels of access control
-                </p>
-                <a
-                  href="transition/menagementSystem.html"
-                  class="btn btn-primary a-btn"
-                  >To Project Page</a
-                >
+
+          <div class="cards-section-6">
+            <div class="cardsJs cardSeven">
+              <div class="overlay">
+                <p>Connect Four game with colorful discs and simple logic.</p>
+                <a href="./transition/connectFour.html" class="btn" target="_blank">See Project</a>
               </div>
-              <div class="book-spine"></div>
-              <img
-                src="images/Management-Stystem.png"
-                class="d-block"
-                id="cartPic"
-              />
             </div>
+            <p>Connect Four</p>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        
       </div>
     </div>
 
     <div class="section-3" id="contact">
-      <img src="images/Rectangle 41.png" alt="" id="ractangle" />
+      <img src="images/Rectangle 41.png" alt="" id="envelope" />
       <div id="container-3">
         <h2>Contact-Us</h2>
         <p id="form-para">
           Leave your details here and we will contact you as soon as possible.
         </p>
-        <form id="form">
-          <div class="row-1">
-            <div class="col-1">
+        <form id="form-contactUs">
+          <div class="form-row">
+            <div class="form-col">
               <label>First-Name</label>
               <input type="text" required placeholder="first name" />
             </div>
-            <div class="col-1">
+            <div class="form-col">
               <label>Last-Name</label>
               <input type="text" required placeholder="last name" />
             </div>
           </div>
-          <div class="row-1">
-            <div class="col-1">
+          <div class="form-row">
+            <div class="form-col">
               <label>Email Adress</label>
               <input type="email" required placeholder="email" />
             </div>
-            <div class="col-1">
+            <div class="form-col">
               <label>Phone Number</label>
               <input type="number" required placeholder="phone number" />
             </div>
           </div>
-          <div class="col-1">
+          <div class="form-col">
             <label>Message content</label>
-            <input type="text" required id="content-messege" />
+            <input type="text" required id="contact-message" />
           </div>
           <input type="submit" value="send" id="send" />
         </form>
@@ -501,29 +355,29 @@
     </div>
 
     <div class="section-4">
-      <div class="col-2">
-        <img src="images/facebook-app-symbol.png" class="imgIcons-1" />
-        <p>#Mor Schneider</p>
+      <div class="col-sectionTwo">
+        <img src="images/facebook-app-symbol.png" class="footer-icons" />
+        <p class="detailsIcons">#Mor Schneider</p>
       </div>
-      <div class="col-2">
-        <img src="images/linkedin.png" class="imgIcons-1" />
-        <p>Mor Schneider</p>
+      <div class="col-sectionTwo">
+        <img src="images/linkedin.png" class="footer-icons" />
+        <p class="detailsIcons">Mor Schneider</p>
       </div>
-      <div class="col-2">
-        <img src="images/phone-call.png" class="imgIcons-1" />
-        <p>054-5630237</p>
+      <div class="col-sectionTwo">
+        <img src="images/phone-call.png" class="footer-icons" />
+        <p class="detailsIcons">054-5630237</p>
       </div>
-      <div class="col-2">
-        <img src="images/whatsapp.png" class="imgIcons-1" />
-        <p>054-5630237</p>
+      <div class="col-sectionTwo">
+        <img src="images/whatsapp.png" class="footer-icons" />
+        <p class="detailsIcons">054-5630237</p>
       </div>
-      <div class="col-2">
-        <img src="images/arroba.png" class="imgIcons-1" />
-        <p>smors289@gmail.com</p>
+      <div class="col-sectionTwo">
+        <img src="images/arroba.png" class="footer-icons" />
+        <p class="detailsIcons">smors289@gmail.com</p>
       </div>
-      <div class="col-2">
-        <img src="images/maps-and-flags.png" class="imgIcons-1" />
-        <p>השחר 5, תל אביב</p>
+      <div class="col-sectionTwo">
+        <img src="images/maps-and-flags.png" class="footer-icons" />
+        <p class="detailsIcons">השחר 5, תל אביב</p>
       </div>
     </div>
     <div class="section-5">

@@ -12,6 +12,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -33,10 +37,23 @@
         division
       </p>
       <div id="knowledge">
-        <img src="images_2/flat-css.png" class="imgIcon" />
-        <img src="images_2/flat-html.png" class="imgIcon" />
-        <img src="images_2/flat-sass.png" class="imgIcon" />
-        <img src="images_2/bootstap icon.png" class="imgIcon" />
+        <div class="aside-box">
+          <div class="aside-item">
+            <a><i class="bx bxl-html5"></i><span>HTML</span></a>
+          </div>
+          <div class="aside-item">
+            <a><i class="bx bxl-css3"></i><span>CSS</span></a>
+          </div>
+          <div class="aside-item">
+            <a
+              ><i class="bx bxl-javascript "></i
+              ><span>JavaScript</span></a
+            >
+          </div>
+          <div class="aside-item">
+            <a href=""><i class="bx bxl-bootstrap"></i></i><span>BOOTSTRAP</span></a>
+          </div>
+        </div>
       </div>
       <div class="row-1">
         <a
@@ -56,13 +73,5 @@
     <div class="section-1" id="abaut">
       <img src="images_2/learningMath.png" alt="" id="image" />
     </div>
-    <script>
-      let image = document.getElementById("image");
-      if (window.innerWidth <= 768) {
-        image.src = "images_2/learning.png";
-      } else {
-        image.src = "images_2/learningMath.png";
-      }
-    </script>
   </body>
 </html>

@@ -13,6 +13,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -34,7 +38,24 @@
     <div id="header">
       <h1 id="h1-header">Around The World</h1>
       <p id="p-header">Here I will show you the knowledge i acquired in:</p>
-      <div id="knowledge"></div>
+      <div id="knowledge">  <div class="aside-box">
+          <div class="aside-item">
+            <a><i class="bx bxl-html5"></i><span>HTML</span></a>
+          </div>
+          <div class="aside-item">
+            <a><i class="bx bxl-css3"></i><span>CSS</span></a>
+          </div>
+          <div class="aside-item">
+            <a
+              ><i class="bx bxl-javascript "></i
+              ><span>JavaScript</span></a
+            >
+          </div>
+          <div class="aside-item">
+            <a href=""><i class="bx bxl-bootstrap"></i></i><span>BOOTSTRAP</span></a>
+          </div>
+        </div>
+      </div>
       <div class="row-1">
         <a href="../landingPages/project-5/index.html" class="decoration">
           <i class="bi bi-folder2-open"></i>
@@ -50,14 +71,5 @@
     <div class="section-1" id="abaut">
       <img src="images_2/לגלות את העולם.png" alt="" id="image" />
     </div>
-    <script>
-      let image = document.getElementById("image");
-      if (window.innerWidth <= 768) {
-        image.src = "images_2/רספונסיבי לגלות את העולם.png";
-      } else {
-        image.src = "images_2/לגלות את העולם.png";
-      }
-    </script>
-    <script src="js/index.js"></script>
   </body>
 </html>

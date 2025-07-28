@@ -28,21 +28,23 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 32px;
+  padding: 20px 15px;
   gap: 30px;
-  background-image: url("../images/header-background.png"),
-    linear-gradient(to right bottom, purple, #eb78c8 50%);
+  background-image: url("../../images/header-background.png"),
+    linear-gradient(to right bottom, #0d6efd7a, #35a9f280 70% 30%);
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
   border-bottom: 1px solid black;
   background-repeat: no-repeat;
-  opacity: 0.9;
+  opacity: 1.1;
 }
 #p-header {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-color: #fff;
-  font-family: Oswald;
+  font-family: Heebo;
+  box-shadow: 0px 0px 10px 4px;
+  padding: 8px;
 }
 .images {
   width: 60px;
@@ -52,12 +54,13 @@ body {
   display: flex;
   gap: 50px;
   justify-content: center;
+  flex-direction: column;
 }
 .section-1 {
   display: flex;
   justify-content: center;
   align-items: start;
-  background-color: #fac3ea;
+  background-color: #0d6efd26;
   padding: 50px;
   gap: 100px;
   flex-direction: row-reverse;
@@ -67,11 +70,10 @@ body {
   gap: 30px;
 }
 a {
-  background-color: #fac3ea;
+  background-color: darkblue;
   padding: 10px;
-  color: purple !important;
+  color: white !important;
   font-weight: bold;
-  border-radius: 16px;
   border: 1px solid purple;
   width: 150px;
   white-space: nowrap;
@@ -84,17 +86,18 @@ a {
   text-decoration: none;
 }
 #image {
-  width: 90%;
+  width: 50%;
 }
 .imgIcon {
   width: 60px;
 }
 #home-page-btn {
-  border: 1px solid;
+  border: 5px solid white;
   border-radius: 8px;
   padding: 6px;
   font-weight: 600;
   width: fit-content;
+  background-color: darkblue;
 }
 .btn-primary {
   display: flex;
@@ -105,13 +108,41 @@ a {
 .decoration {
   gap: 10px;
 }
+.aside-box {
+  display: flex;
+  gap: 5px;
+}
+.aside-box a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  color: black !important;
+  border: 1px solid black;
+}
+.bx {
+  font-size: 2rem;
+}
+.bxl-bootstrap {
+  color: rgb(145, 5, 169);
+}
+.bxl-javascript {
+  color: yellow;
+}
+.bxl-css3 {
+  color: blue;
+}
+.bxl-html5 {
+  color: orange;
+}
 
 @media screen and (max-width: 768px) {
-  /* #h1-header {
-    font-size: 2.5rem;
-  } */
   #p-header {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 8px;
     border-radius: 8px;
   }
@@ -150,5 +181,8 @@ a {
     padding: 6px;
     width: 150px;
     font-size: 1rem;
+  }
+  .cardsJs .overlay p {
+    font-size: 0.67rem !important;
   }
 }

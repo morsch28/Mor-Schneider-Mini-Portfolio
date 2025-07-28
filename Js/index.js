@@ -1,24 +1,3 @@
-let imgArr = [
-  "images/flat-css.png",
-  "images/flat-html.png",
-  "images/flat-sass.png",
-  "images/bootstap icon.png",
-  "images/flat-js.png",
-];
-let knowledge = document.getElementById("knowledge");
-let spines = document.querySelectorAll(".book-spine");
-let numberOfSpine = 14;
-
-imgArr.forEach((imageSrc, index) => {
-  let image = document.createElement("img");
-  image.src = imageSrc;
-  image.className = "images";
-  if (index == 4) {
-    image.id = "last";
-  }
-  knowledge.appendChild(image);
-});
-
 spines.forEach((spine, index) => {
   for (let i = 0; i < numberOfSpine; i++) {
     let div = document.createElement("div");
