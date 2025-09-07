@@ -467,8 +467,8 @@ input[type="submit"] {
     font-size: 0.9rem;
   }
   .cardsJs {
-    width: 140px;
-    height: 140px;
+    width: 164px;
+    height: 164px;
   }
 
   #knowledge {
@@ -542,7 +542,7 @@ input[type="submit"] {
   .section-6 {
     padding: 10px;
     background-color: #f5deb370;
-    height: 900px;
+    height: 1000px;
   }
   .h2Js {
     color: purple !important;
