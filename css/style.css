@@ -378,6 +378,7 @@ input[type="submit"] {
   opacity: 0;
   transition: opacity 0.3s ease;
   color: white;
+  height: 150px;
 }
 .card:hover .overlay {
   opacity: 1;
